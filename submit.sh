@@ -1,5 +1,5 @@
 #!/bin/bash
-/home/ning/epidemic_submit/submit.py yourusername yourpassword
+/home/ning/epidemic_submit/submit.py
 result=$?
 #echo $result
 #test $result = 1 && echo '成功提交'
