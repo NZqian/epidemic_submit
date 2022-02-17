@@ -13,6 +13,7 @@ def submit(username, password):
     chrome_options.add_argument('--headless')
     chrome_options.add_argument('--blink-settings=imagesEnabled=false')
     chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('--no-sandbox')
     browser = webdriver.Chrome(options=chrome_options)
     browser.implicitly_wait(10)
     browser.get("http://yqtb.nwpu.edu.cn/wx/xg/yz-mobile/index.jsp")
