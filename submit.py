@@ -25,7 +25,7 @@ def submit(username, password):
     html = browser.page_source
     file_object.write(html)
     file_object.close()
-    browser.find_element_by_xpath('//a[@href="/wx/ry/jrsb.jsp"]').click()
+    browser.find_element_by_xpath('//a[@href="/wx/ry/jrsb_js.jsp"]').click()
     submitted_title = browser.find_element_by_class_name('page__title')
     browser.find_element_by_link_text('提交填报信息').click()
     checkbox = browser.find_element_by_xpath('//input[@type="checkbox"]')
